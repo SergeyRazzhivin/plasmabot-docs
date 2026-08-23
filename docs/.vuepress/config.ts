@@ -24,6 +24,7 @@ export default defineUserConfig({
       { text: "Редактор", link: "/editor/ui-overview.html" },
       { text: "Рез", link: "/cut/cut-settings.html" },
       { text: "CAM-ядро", link: "/cam/" },
+      { text: "Лог", link: "/log/" },
     ],
 
     sidebar: {
@@ -78,6 +79,7 @@ export default defineUserConfig({
           children: ["/cam/README.md"],
         },
       ],
+      "/log/": "heading",
     },
   }),
 });
