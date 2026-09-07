@@ -5,6 +5,19 @@
 
 <!-- LOG:INSERT -->
 
+## 2026-09-07
+
+- Plasmaresis DB / фаза 2: завершена — токен Telegram-бота, pdb и skill
+  развёрнуты на xorek, страница Черновики, веб-чат, интеграционные тесты.
+- Plasmaresis DB / фаза 5: завершена — канвас схемы проекта на Vue Flow
+  (железо со связями, версия, редактор, бот) добавлен в заметку и крючок
+  в `1 Projects/index.md`.
+- Plasmaresis v2 / железо: принято решение — остаёмся на LinuxCNC + MESA
+  7I98 + QtPlasmaC; MKS SERVO57D V1.2 ставим в режим STEP/DIR (CAN-ветка
+  отложена). Задокументирована распиновка BOB → SERVO57D (common-anode:
+  V+ → Com, CLK → Stp, CW → Dir, EN → En). Из BOM отбракованы кабель
+  DB25 папа-папа и CNC Shield V3 — не подходят для этой ветки.
+
 ## 2026-09-06
 
 - Документация / железо: в 3 Resources/Hardware (LFS) добавлены мануалы и
