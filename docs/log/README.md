@@ -5,6 +5,13 @@
 
 <!-- LOG:INSERT -->
 
+## 2026-09-08
+
+- Нет коммитов во всех репозиториях за сутки. Текущий срез: Plasmaresis DB —
+  фазы 2 и 5 завершены (Telegram-мост, веб-чат, Vue Flow канвас схемы
+  проекта); Plasmaresis v2 — принято решение LinuxCNC + MESA 7I98 +
+  SERVO57D step/dir, распиновка BOB → SERVO57D задокументирована.
+
 ## 2026-09-07
 
 - Plasmaresis DB / фаза 2: завершена — токен Telegram-бота, pdb и skill
