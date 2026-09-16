@@ -5,6 +5,20 @@
 
 <!-- LOG:INSERT -->
 
+## 2026-09-16
+
+- Plasmaresis v2 / железо: клон MESA F7I98 (Spartan6 XC6SLX9, адрес 10.10.10.10) поднят
+  под mesaflash 3.4.9 из WSL (`--device ETHER`); flash забэкаплена, голая GPIO-прошивка
+  без stepgen.
+- Plasmaresis v2 / железо: мотор X (BOB → MKS SERVO57D → NEMA23) впервые покрутился
+  программными UDP-шагами без перепрошивки; граблька — SERVO57D по умолчанию En = L,
+  EN надо держать LOW; 3.3 В push-pull от BOB хватило.
+- Plasmaresis v2 / документация: добавлен `f7i98_x_spin.py` + runbook подключения,
+  справочник MESA 7I98 и запись в BOB 5 осей ST-V2 в memory-vault.
+- Грабли / сеть: второй IP на Ethernet-адаптере ПК сбросил DHCP → пропал интернет и
+  Telegram (VPN Bebra не переподключился); правильный способ — временный on-link маршрут
+  /32 на адрес платы (ActiveStore, DHCP не трогает).
+
 ## 2026-09-15
 
 - Активности не было.
