@@ -5,6 +5,25 @@
 
 <!-- LOG:INSERT -->
 
+## 2026-09-18
+
+- Plasmaresis / пульт: фаза 7 закрыта кодом и тестами (сетка отступов); метрика пульта
+  собрана в один словарь — блок TOKENS в `plasmabot_theme.qss`, `metrics()` раздаёт
+  те же числа в Python, размеры `.ui` сверяются с ним тестом; нарушений сетки в 10 видах:
+  0 (против 26 на старте); гейт: 658 юнитов + 67 смоуков; инструменты:
+  `tests/spacing_audit.py`, `tests/test_metrics.py`, `scripts/grid-report.py`.
+- Plasmaresis / пульт / Qt-грабли: `QStackedLayout` и `QMainWindowLayout` свои поля
+  не применяют (145 «призраков» из 161 в первом отчёте); рамка по box-model Qt ложится
+  снаружи высоты — отсюда токены `@row-b1`/`@row-b2`; всё с замерами в
+  `docs/qt-spacing-traps.md`.
+- Plasmaresis / пульт / инцидент: перед работой вернул из git
+  `configs/plasmabot-sim/plasmabot-sim.ini` — MOUNT был изменён top→bottom через
+  страницу настроек вечером 17.09, из-за чего 31 тест был красным.
+- Plasmaresis v2 / железо: выбран боевой пульт — мини-ПК **Higole F3APL** (14 493 ₽,
+  Ozon); J3455, 4 ГБ, 8" тач, 1 Гбит RJ45 — критичный порт под MESA 7I98 по Ethernet;
+  ОС: LinuxCNC 2.9 Live ISO (Debian 12, PREEMPT_RT — не RTAI, RTAI нужен только под LPT);
+  задокументирован пошаговый план установки и latency-test в memory-vault.
+
 ## 2026-09-16
 
 - Plasmaresis v2 / железо: клон MESA F7I98 (Spartan6 XC6SLX9, адрес 10.10.10.10) поднят
